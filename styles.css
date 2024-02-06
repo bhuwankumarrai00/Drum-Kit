@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  background-color: #283149;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+  margin-bottom: 30px;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+  margin-top: 30px;
+}
+
+/* Drum button styles */
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s, opacity 0.3s;
+}
+
+.drum:hover {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+}
+
+.drum.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+/* Drum button background images */
+.drum.w {
+  background-image: url("images/tom1.png");
+}
+
+.drum.a {
+  background-image: url("images/tom2.png");
+}
+
+.drum.s {
+  background-image: url("images/tom3.png");
+}
+
+.drum.d {
+  background-image: url("images/tom4.png");
+}
+
+.drum.j {
+  background-image: url("images/snare.png");
+}
+
+.drum.k {
+  background-image: url("images/crash.png");
+}
+
+.drum.l {
+  background-image: url("images/kick.png");
+}
+
+/* Set container */
+.set {
+  margin: 10% auto;
+}
