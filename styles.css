@@ -82,3 +82,15 @@ footer {
 .set {
   margin: 10% auto;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .drum {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+  }
+}
