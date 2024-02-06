@@ -48,3 +48,20 @@ function buttonAnimation(currentKey) {
     }, 100);
   }
 }
+
+let tapCount = 0;
+const maxTapsToDisableZoom = 2; // Set the threshold for taps here
+document.addEventListener("touchstart", function(event) {
+  tapCount++;
+
+  // If the tap count exceeds the threshold, prevent default behavior (e.g., zooming)
+  if (tapCount >= maxTapsToDisableZoom) {
+    event.preventDefault();
+
+    // Reset tap count after a short delay
+    setTimeout(function() {
+      tapCount = 0;
+    }, delayToResetTapCount);
+  }
+});
+
